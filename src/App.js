@@ -8,20 +8,20 @@ export default function App() {
       parent: 0,
       name: "src",
       id: 1,
-      isFolder: true
+      isFolder: true,
     },
     {
       parent: 1,
-      name: "test.js",
+      name: "test-123.js",
       isFolder: false,
-      id: Math.random()
+      id: Math.random(),
     },
     {
       parent: 1,
       name: "index.js",
       isFolder: false,
-      id: Math.random()
-    }
+      id: Math.random(),
+    },
   ];
   // const initialData = [
   //   {
@@ -84,13 +84,13 @@ export default function App() {
             name: item.name,
             id: item.id,
             isFolder: item.isFolder,
-            data: getData(dataList, item.id, [])
+            data: getData(dataList, item.id, []),
           });
         }
       });
       return data;
     },
-    [dataList]
+    [dataList],
   );
   useEffect(() => {
     const finalData = [];
@@ -101,7 +101,7 @@ export default function App() {
           name: item.name,
           id: item.id,
           isFolder: item.isFolder,
-          data: getData(dataList, item.id, [])
+          data: getData(dataList, item.id, []),
         });
       }
     });

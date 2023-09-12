@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.folder {
+  display: flex;
+  gap: 5px;
+  background-color: lightcyan;
+  justify-content: space-between;
+  width: 75%;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: unset;
+  max-width: 600px;
+}
+
+.file {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.level2 {
+  padding-left: 15px;
+}
+
+.folder:hover {
+  background-color: lightblue;
+}
